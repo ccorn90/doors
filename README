@@ -1,20 +1,27 @@
 Door Detection Using Superpixels
 Chris Cornelius and Ian McGinnis
 St. Olaf College 2012
-Adv: Prof. Olaf Hall-Holt
+Advisor: Prof. Olaf Hall-Holt
 
+--- For reference ---
+See our CS wiki page at : http://www.cs.stolaf.edu/wiki/index.php/Capstone_S12/The_Doors
+
+--- Code structure overview ---
 The project centers in the DoorDetector object, which is fed an Image object and a vector<CPoly>, and outputs a vector of DoorObject.
 DoorObject and LineSegment are two helper objects.
 
-This project uses the Eriol framework for image viewing.  It will be helpful to know some keyboard commands:
+--- Working environments ---
+Currently configured to work on recent Fedora versions.  Mac OS X is coming soon but has not been implemented in the Makefile yet.
 
-_Basic Eriol Commands_
+--- External Dependancies, to best of knowledge ---
+openMP parallel execution library
+OpenGL, GLUT
+
+--- To get started ---
+"make run" ought to compile and run the demonstration executable.  Some commands may be helpful once you get to the GUI image viewer:
 To zoom in and out: '+' and '-'
 To increase window size: '<' and '>'
 To toggle display of polygon overlays: '@'
-
-_Door-Detection Eriol Commands_
 To run door-detection method: '#'
 To select an image to view: '[' and ']'
 To choose a polygon overlay to view: '{' and '}'
-After running the detection code, polygons may be displayed but all-messed-up. If so, zoom out and then back in again, using '+' and '-' ... this is a bug, it is confusing, and it's most likely not our fault.

@@ -1,0 +1,20 @@
+Door Detection Using Superpixels
+Chris Cornelius and Ian McGinnis
+St. Olaf College 2012
+Adv: Prof. Olaf Hall-Holt
+
+The project centers in the DoorDetector object, which is fed an Image object and a vector<CPoly>, and outputs a vector of DoorObject.
+DoorObject and LineSegment are two helper objects.
+
+This project uses the Eriol framework for image viewing.  It will be helpful to know some keyboard commands:
+
+_Basic Eriol Commands_
+To zoom in and out: '+' and '-'
+To increase window size: '<' and '>'
+To toggle display of polygon overlays: '@'
+
+_Door-Detection Eriol Commands_
+To run door-detection method: '#'
+To select an image to view: '[' and ']'
+To choose a polygon overlay to view: '{' and '}'
+After running the detection code, polygons may be displayed but all-messed-up. If so, zoom out and then back in again, using '+' and '-' ... this is a bug, it is confusing, and it's most likely not our fault.
